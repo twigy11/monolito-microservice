@@ -43,6 +43,26 @@
             <artifactId>springdoc-openapi-data-rest</artifactId>
             <version>1.6.14</version>
         </dependency>
+        <!-- Dependencia de Spring Boot Starter para JSF -->
+        <dependency>
+            <groupId>org.joinfaces</groupId>
+            <artifactId>jsf-spring-boot-starter</artifactId>
+            <version>4.4.5</version>
+        </dependency>
+
+        <!-- Mojarra (implementación de JSF) -->
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>jakarta.faces</artifactId>
+            <version>2.3.14</version>
+        </dependency>
+
+        <!-- PrimeFaces para componentes de UI -->
+        <dependency>
+            <groupId>org.primefaces</groupId>
+            <artifactId>primefaces</artifactId>
+            <version>8.0</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

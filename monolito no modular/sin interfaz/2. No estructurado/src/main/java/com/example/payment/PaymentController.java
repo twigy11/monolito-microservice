@@ -1,5 +1,7 @@
 package com.example.payment;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,5 +21,9 @@ public class PaymentController {
     @GetMapping("/{id}")
     public Payment getPayment(@PathVariable Long id) {
         return paymentService.getPayment(id);
+    }
+    @GetMapping("/all")
+    public List<Payment> getAll(){
+        return paymentService.getAllPayments();
     }
 }
